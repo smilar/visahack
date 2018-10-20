@@ -82,10 +82,12 @@ public class EnvelopeController {
         val month = new MonthlyEnvelope();
         month.setMonth(Month.of(now.get(Calendar.MONTH)+1));
         month.setYear(Long.valueOf(now.get(Calendar.YEAR)));
-        month.setParentEnvelope(parent);
+        month.setParentId(id);
         month.setTotal(monthlyEnvelope.getTotal());
         month.setRemaining(monthlyEnvelope.getTotal());
-        month.setVanId(monthlyEnvelope.getVanId());
+        month.setVanId(123l);
+        month.setLastFour("4231");
+        month.setExpDate("12/22");
         return monthlyEnvelopeRepository.save(month);
         }).orElseThrow(() -> {
             throw new EnvelopeNotFound("Envelope with id: "+id + "not Found");

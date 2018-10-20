@@ -7,5 +7,4 @@ import lombok.Data;
 @Data
 public class MonthlyEnvelopeRequest{
     private BigDecimal total;
-    private Long vanId;
 }

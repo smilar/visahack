@@ -1,7 +1,9 @@
 package com.chase.money.envelopes.data;
 
+import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
 import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface EnvelopeRepository extends JpaRepository<Envelope, Long> {
+import org.springframework.data.repository.CrudRepository;
+@EnableScan
+public interface EnvelopeRepository extends CrudRepository<Envelope, Long> {
 
 }
