@@ -17,10 +17,6 @@ Smart budgeting app proactively helps household families to manage their finance
 * iOS 10.0+
 * Java 8+
 
-```
-Give examples
-```
-
 ### Installing
 
 Java
