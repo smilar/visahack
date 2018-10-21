@@ -4,7 +4,6 @@ import java.time.Month;
 import java.util.Calendar;
 import java.util.List;
 
-import javax.transaction.Transactional;
 
 import com.chase.money.envelopes.data.Envelope;
 import com.chase.money.envelopes.data.EnvelopeRepository;
@@ -63,14 +62,14 @@ public class EnvelopeController {
     @GetMapping("/envelope/{id}/{year}")
     public List<MonthlyEnvelope> getYearlyEnvelopes(@PathVariable("id") long id, @PathVariable("year") long year) {
         log.info("getting year of envelopes " + year);
-        return monthlyEnvelopeRepository.findByParentEnvelopeIdAndYear(id, year);
+        return monthlyEnvelopeRepository.findByParentIdAndYear(id, year);
     }
 
     @GetMapping("/envelope/{id}/{year}/{month}")
     public MonthlyEnvelope getMonthlyEnvelope(@PathVariable("id") long id, @PathVariable("year") long year,
             @PathVariable("month") String month) {
                 log.info("getting year/month of envelope "+id+" year:" + year+" month:"+month);
-        return monthlyEnvelopeRepository.findByParentEnvelopeIdAndYearAndMonth(id, year, Month.valueOf(month));
+        return monthlyEnvelopeRepository.findByParentIdAndYearAndMonth(id, year, Month.valueOf(month));
     }
 
     @PutMapping("/envelope/{id}")

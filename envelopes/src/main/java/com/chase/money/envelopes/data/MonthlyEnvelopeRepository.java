@@ -9,9 +9,9 @@ import org.springframework.data.repository.CrudRepository;
 @EnableScan
 public interface MonthlyEnvelopeRepository extends CrudRepository<MonthlyEnvelope, Long> {
 
-    List<MonthlyEnvelope> findByParentEnvelopeIdAndYear(long id, long year);
+    List<MonthlyEnvelope> findByParentIdAndYear(long id, long year);
     
-	MonthlyEnvelope findByParentEnvelopeIdAndYearAndMonth(long id, long year,Month month);
+	MonthlyEnvelope findByParentIdAndYearAndMonth(long id, long year,Month month);
 	List<MonthlyEnvelope> findByYearAndMonth(long year,Month month);
 
 
