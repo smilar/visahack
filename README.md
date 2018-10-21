@@ -1,8 +1,6 @@
 # Money Clips
 
-One Paragraph of project description goes here
-
-## Getting Started
+## Project Description
 
 Smart budgeting app proactively helps household families to manage their finances and savings by:
 * The app helps the user to create short life goals like Emergency fund or a vacation. Or long life goals like 
@@ -12,7 +10,6 @@ Smart budgeting app proactively helps household families to manage their finance
 
 * VISA B2B, Virtual Account
 * Yodlee Fastlink API
-
 * Xcode 9 / Swift 4+
 * iOS 10.0+
 * Java 8+
@@ -31,7 +28,6 @@ Then, run the following command:
 $ pod install
 ```
 
-
 ## The How
 * The app creates a virtual account linked to your credit/debit/prepaid visa account. 
 * The limits are set at the Merchant Category Code levels
@@ -44,13 +40,6 @@ $ pod install
 * 51M adults in the US are underbanked, 45M lack credit score
 * Most families have no idea how are they spending their money
 
-## Future Enhancements:
-* Bio/OTP Registration & Login
-* Suggested categories by our ML algorithm. 
-* Enable Prepaid cards for those who doesn't have bank acct
-* Native Wallet Integration
-* AI based new categories/savings suggestions
-
 ## Deployment
 
 AWS Elastic Beanstalk automation with CICD pipeline.
@@ -61,6 +50,13 @@ AWS Elastic Beanstalk automation with CICD pipeline.
 * [Java](https://www.java.com/en/download/) 
 * [Visa Developer API](https://developer.visa.com/) 
 * [Yodlee API](https://developer.yodlee.com/)
+
+## Future Enhancements:
+* Bio/OTP Registration & Login
+* Suggested categories by our ML algorithm. 
+* Enable Prepaid cards for those who doesn't have bank acct
+* Native Wallet Integration
+* AI based new categories/savings suggestions
 
 ## Contributing
 
@@ -76,7 +72,6 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 * **Andrey** - *Initial work* - [andreydanil](https://github.com/andreydanil)
 * **Nick** - *Initial work* - [nickChaseUser](https://github.com/nickChaseUser)
 * **Kumar** - *Initial work* - [kumar-sundaram](https://github.com/kumar-sundaram)
-
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
