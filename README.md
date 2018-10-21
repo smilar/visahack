@@ -72,6 +72,7 @@ Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c6
 * **Andrey** - *Initial work* - [andreydanil](https://github.com/andreydanil)
 * **Nick** - *Initial work* - [nickChaseUser](https://github.com/nickChaseUser)
 * **Kumar** - *Initial work* - [kumar-sundaram](https://github.com/kumar-sundaram)
+* **Sri** - *Initial work* - [sridharamudhan](https://github.com/sridharamudhan)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
