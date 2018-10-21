@@ -14,6 +14,10 @@ class CardViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:)))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
     }
     
 
@@ -31,6 +35,17 @@ class CardViewController: UIViewController {
         navigationController?.popViewController(animated: true)
         
         dismiss(animated: true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        
+        return true
+    }
+    
+    func doneButtonAction() {
+        self.view.endEditing(true)
     }
     
 }

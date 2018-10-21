@@ -433,7 +433,7 @@
         <scene sceneID="wTf-05-CMI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QK9-4H-E5H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Goals" image="Courses Filled" selectedImage="Free Course" id="eks-RF-FCG"/>
+                    <tabBarItem key="tabBarItem" title="Goals" image="Free Course" selectedImage="Free Course Filled" id="eks-RF-FCG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2eM-1h-exh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -610,8 +610,8 @@
     <resources>
         <image name="Author" width="50" height="50"/>
         <image name="Burger" width="50" height="50"/>
-        <image name="Courses Filled" width="50" height="50"/>
         <image name="Free Course" width="50" height="50"/>
+        <image name="Free Course Filled" width="50" height="50"/>
         <image name="app1" width="432" height="881"/>
         <image name="visa_card" width="532" height="335"/>
     </resources>
