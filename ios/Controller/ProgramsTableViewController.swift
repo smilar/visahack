@@ -34,9 +34,9 @@ class ProgramsTableViewController: UITableViewController {
     {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Course Cell", for: indexPath) as! CourseTableViewCell
         
-        let program = programs[indexPath.row]
-        let mockCourse = Course(title: program.title, description: program.description, image: program.image!, programURL: program.url)
-        cell.course = mockCourse
+//        let program = programs[indexPath.row]
+//        let mockCourse = Course(title: program.title, description: program.description, image: program.image!, programURL: program.url)
+//        cell.course = mockCourse
         
         return cell
     }
