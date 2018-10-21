@@ -1,4 +1,4 @@
-package com.chase.money.envelopes.data;
+package com.nick.money.envelopes.data;
 
 
 import javax.validation.constraints.NotNull;

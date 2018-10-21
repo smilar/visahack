@@ -1,4 +1,4 @@
-package com.chase.money.envelopes.data; 
+package com.nick.money.envelopes.data; 
 
 // import org.springframework.context.annotation.Bean;
 // import org.springframework.context.annotation.Configuration;

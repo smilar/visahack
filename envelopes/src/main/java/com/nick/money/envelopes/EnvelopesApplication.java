@@ -1,4 +1,4 @@
-package com.chase.money.envelopes;
+package com.nick.money.envelopes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

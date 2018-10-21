@@ -1,4 +1,4 @@
-package com.chase.money.envelopes.data;
+package com.nick.money.envelopes.data;
 
 import java.math.BigDecimal;
 

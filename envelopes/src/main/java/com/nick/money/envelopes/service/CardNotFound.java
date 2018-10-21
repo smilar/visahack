@@ -1,12 +1,12 @@
-package com.chase.money.envelopes.controller;
+package com.nick.money.envelopes.service;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class EnvelopeNotFound extends RuntimeException {
+public class CardNotFound extends RuntimeException {
 
-    public EnvelopeNotFound(String string) {
+    public CardNotFound(String string) {
         super(string);
 	}
 

@@ -1,9 +1,9 @@
-package com.chase.money.envelopes.service;
+package com.nick.money.envelopes.service;
 
-import com.chase.money.envelopes.data.Pan;
-import com.chase.money.envelopes.data.PanRepository;
-import com.chase.money.envelopes.data.Van;
-import com.chase.money.envelopes.data.VanRepository;
+import com.nick.money.envelopes.data.Pan;
+import com.nick.money.envelopes.data.PanRepository;
+import com.nick.money.envelopes.data.Van;
+import com.nick.money.envelopes.data.VanRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

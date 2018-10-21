@@ -1,8 +1,8 @@
-package com.chase.money.envelopes.data;
+package com.nick.money.envelopes.data;
 
 import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
 import org.springframework.data.repository.CrudRepository;
 @EnableScan
-public interface VanRepository extends CrudRepository<Van, String> {
+public interface PanRepository extends CrudRepository<Pan, String> {
 
 }
