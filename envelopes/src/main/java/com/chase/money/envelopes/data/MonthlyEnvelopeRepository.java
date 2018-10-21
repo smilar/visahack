@@ -11,8 +11,8 @@ public interface MonthlyEnvelopeRepository extends CrudRepository<MonthlyEnvelop
 
     List<MonthlyEnvelope> findByParentIdAndYear(String id, long year);
     
-	MonthlyEnvelope findByParentIdAndYearAndMonth(String id, long year,Month month);
-	List<MonthlyEnvelope> findByYearAndMonth(long year,Month month);
+	MonthlyEnvelope findByParentIdAndYearAndMonth(String id, long year,String month);
+	List<MonthlyEnvelope> findByYearAndMonth(long year,String month);
 
 
 }
