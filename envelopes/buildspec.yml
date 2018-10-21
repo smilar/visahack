@@ -1,0 +1,10 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - cd envelopes && mvn clean package
+artifacts:
+  files:
+    - envelopes/target/envelopes-0.0.1-SNAPSHOT.jar
+    - envelopes/procfile
