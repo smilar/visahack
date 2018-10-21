@@ -512,7 +512,7 @@
 				DEVELOPMENT_TEAM = GKA76QVLKF;
 				INFOPLIST_FILE = RoomBooking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.RoomBooking;
+				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.MoneyClips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -525,7 +525,7 @@
 				DEVELOPMENT_TEAM = GKA76QVLKF;
 				INFOPLIST_FILE = RoomBooking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.RoomBooking;
+				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.MoneyClips;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

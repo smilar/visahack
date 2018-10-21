@@ -27,7 +27,7 @@ class Program {
     
     static func TotalIOSBlueprint() -> Program
     {
-        let course1 = Course(title: "Grocery", description: "$500.00", image: UIImage(named: "visa_card")!, programURL: "https://developer.visa.com/")
+        let course1 = Course(title: "Grocery", description: "$500.00", image: UIImage(named: "visa_card")!, programURL: "https://developer.visa.com/", progress: 0.8, current: 415.97, max: 500.00)
         
         
         
@@ -39,7 +39,7 @@ class Program {
     
     static func SocializeYourApps() -> Program
     {
-        let course12 = Course(title: "Clothes", description: "$250.00", image: UIImage(named: "visa_card")!, programURL: "http://learn.developersacademy.io/courses/socialize-your-apps-online")
+        let course12 = Course(title: "Clothes", description: "$250.00", image: UIImage(named: "visa_card")!, programURL: "http://learn.developersacademy.io/courses/socialize-your-apps-online", progress: 0.5, current: 235.45, max: 300.00)
         
         
         let courses = [course12]

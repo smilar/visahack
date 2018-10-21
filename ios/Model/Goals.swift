@@ -13,55 +13,54 @@ import UIKit
 class Goal
 {
     var goalTitle = ""
-    var goalCurrent = ""
-    var goalTarget = ""
-    var image: UIImage!
-    var programURL = ""
+    var goalCurrent = 0.0
+    var goalTarget = 0.0
+    var goalProgress = 0.0
     
-    init(goalTitle: String)
+    init(goalTitle: String, goalCurrent: Double, goalTarget: Double, goalProgress: Double)
     {
         self.goalTitle = goalTitle
+        self.goalCurrent = goalCurrent
+        self.goalTarget = goalTarget
+        self.goalProgress = goalProgress
     }
 }
 
 class Goals {
     var title = ""
-    var goalCurrent = ""
-    var goalTarget = ""
-    var description = ""
-    var image = UIImage(named: "1")
-    var url = ""
+    var goalCurrent = 0.0
+    var goalTarget = 0.0
+    var goalProgress = 0.0
     var goals = [Goal]()
     
-    init(title: String, goalCurrent: String, goalTarget: String, url: String, goals: [Goal])
+    init(title: String, goalCurrent: Double, goalTarget: Double, goalProgress: Double, goals: [Goal])
     {
         self.title = title
         self.goalCurrent = goalCurrent
         self.goalTarget = goalTarget
+        self.goalProgress = goalProgress
         self.goals = goals
     }
     
-    static func ShortTerm() -> Goal
+    static func ShortTerm() -> Goals
     {
 
-        let goal1 = Goal(goalTitle: "House")
-        let goal2 = Goal(goalTitle: "House")
-        let goal3 = Goal(goalTitle: "House")
-        let goals = [goal1, goal2, goal3]
+        let goal1 = Goal(goalTitle: "House", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5)
         
-        let shortTerm = Goal(goalTitle: "house")
+        let goal2 = Goal(goalTitle: "Car", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5)
+        let goals = [goal1]
+        
+        let shortTerm = Goals(title: "Key", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5,goals: goals)
         
         return shortTerm
     }
     
-    static func LongTerm() -> Goal
+    static func LongTerm() -> Goals
     {
-        let goal1 = Goal(goalTitle: "House")
-        let goal2 = Goal(goalTitle: "House")
-        let goal3 = Goal(goalTitle: "House")
-        let goals = [goal1, goal2, goal3]
+        let goal1 = Goal(goalTitle: "House", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5)
+        let goals = [goal1]
         
-        let longTerm = Goal(goalTitle: "house")
+        let longTerm = Goals(title: "Car", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5,goals: goals)
         
         return longTerm
     }

@@ -18,9 +18,11 @@ class FreeCourseViewController: UITableViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let course1 = Course(title: "Groceries", description: "$500.00", image: UIImage(named: "visa_card")!, programURL: "http://www.developersacademy.io/4courses")
+    
+        let course1 = Course(title: "Groceries", description: "$500.00", image: UIImage(named: "visa_card")!, programURL: "http://www.developersacademy.io/4courses",
+                             progress: 0.5, current: 235.45, max: 500.00)
         
-        let course15 = Course(title: "Clothes", description: "$500.00", image: UIImage(named: "visa_card")!, programURL: "http://www.developersacademy.io/")
+        let course15 = Course(title: "Clothes", description: "$500.00", image: UIImage(named: "visa_card")!, programURL: "http://www.developersacademy.io/", progress: 0.5, current: 235.45, max: 500.00)
         
         courses = [course1, course15]
         
@@ -36,7 +38,7 @@ class FreeCourseViewController: UITableViewController
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return courses.count
+        return 4
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

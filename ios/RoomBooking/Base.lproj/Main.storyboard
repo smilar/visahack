@@ -17,7 +17,7 @@
         <!--Page View Controller-->
         <scene sceneID="u39-2w-BpX">
             <objects>
-                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="AHV-O9-k6m" customClass="PageViewController" customModule="MicroMoney" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="AHV-O9-k6m" customClass="PageViewController" customModule="MoneyClips" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dXc-YU-8HK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2746" y="1310"/>
@@ -25,7 +25,7 @@
         <!--Walkthrough View Controller-->
         <scene sceneID="ixb-v0-kBA">
             <objects>
-                <viewController storyboardIdentifier="WalkthroughViewController" id="c9u-LF-XxU" customClass="WalkthroughViewController" customModule="MicroMoney" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalkthroughViewController" id="c9u-LF-XxU" customClass="WalkthroughViewController" customModule="MoneyClips" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4Oe-LN-fUW"/>
                         <viewControllerLayoutGuide type="bottom" id="mNN-rn-G6E"/>
@@ -43,7 +43,7 @@
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxy-Zf-slR">
                                 <rect key="frame" x="0.0" y="593.33333333333337" width="414" height="268.66666666666663"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ld9-wz-UIh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="269"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="268.66666666666663"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Learn to Design iOS Apps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LM4-Ju-vbm">
@@ -189,13 +189,13 @@
         <!--Cards-->
         <scene sceneID="mfK-lJ-RSC">
             <objects>
-                <tableViewController id="5Qq-Y7-LmS" customClass="CoursesTableViewController" customModule="MicroMoney" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="5Qq-Y7-LmS" customClass="CoursesTableViewController" customModule="MoneyClips" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="422" sectionHeaderHeight="28" sectionFooterHeight="28" id="aVy-Gn-NJq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Course Cell" rowHeight="422" id="D4o-I4-jXI" customClass="CourseTableViewCell" customModule="MicroMoney" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Course Cell" rowHeight="422" id="D4o-I4-jXI" customClass="CourseTableViewCell" customModule="MoneyClips" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D4o-I4-jXI" id="vSH-9T-ezz">
@@ -287,8 +287,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="courseDescription" destination="nXW-RV-LKW" id="yoG-MK-J5F"/>
                                     <outlet property="courseImageView" destination="c1X-Ns-klL" id="VqE-jf-6nj"/>
+                                    <outlet property="current" destination="ioR-j5-wmI" id="0WI-0A-fTm"/>
+                                    <outlet property="limit" destination="nXW-RV-LKW" id="YZR-0W-pUh"/>
+                                    <outlet property="max" destination="XRX-My-ncP" id="NQ4-ko-HTA"/>
+                                    <outlet property="progress" destination="OEU-EV-JzE" id="J1m-oy-9gi"/>
                                     <outlet property="title" destination="mSa-A9-DJk" id="sM3-b0-WLu"/>
                                 </connections>
                             </tableViewCell>
@@ -315,7 +318,7 @@
         <!--Card View Controller-->
         <scene sceneID="VLB-Mr-D9S">
             <objects>
-                <viewController id="bXb-NF-rLH" customClass="CardViewController" customModule="MicroMoney" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bXb-NF-rLH" customClass="CardViewController" customModule="MoneyClips" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nyb-0K-05S"/>
                         <viewControllerLayoutGuide type="bottom" id="h2H-Mc-TNL"/>
@@ -448,7 +451,7 @@
         <!--Goals-->
         <scene sceneID="MOt-Ok-lH0">
             <objects>
-                <viewController id="ZQq-G4-QTL" customClass="SettingsViewController" customModule="MicroMoney" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZQq-G4-QTL" customClass="SettingsViewController" customModule="MoneyClips" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="duA-fk-5P0"/>
                         <viewControllerLayoutGuide type="bottom" id="1U0-5F-D64"/>
@@ -504,17 +507,17 @@
         <!--Goals-->
         <scene sceneID="ixM-7u-MJp">
             <objects>
-                <tableViewController id="uEa-pA-Sc5" customClass="GoalsTableViewController" customModule="MicroMoney" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uEa-pA-Sc5" customClass="GoalsTableViewController" customModule="MoneyClips" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="KxZ-5w-FJ4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Course Cell" rowHeight="100" id="cso-y3-MEg" userLabel="Goal Cell" customClass="GoalTableViewCell" customModule="MicroMoney" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Goal Cell" rowHeight="210" id="cso-y3-MEg" userLabel="Goal Cell" customClass="GoalTableViewCell" customModule="MoneyClips" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cso-y3-MEg" id="lZS-yt-fnX">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.666666666666671"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="209.66666666666666"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Goal" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kvy-cW-c5o">
@@ -524,18 +527,19 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smU-Ki-5qa">
-                                            <rect key="frame" x="20" y="46" width="65" height="14.666666666666664"/>
+                                            <rect key="frame" x="20" y="46" width="65" height="15"/>
                                             <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="2vq-LU-whB"/>
                                                 <constraint firstAttribute="width" constant="65" id="6CG-zf-ON1"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.60000002384185791" translatesAutoresizingMaskIntoConstraints="NO" id="118-0e-c9b">
-                                            <rect key="frame" x="20" y="74.666666666666671" width="374" height="2.6666666666666714"/>
+                                            <rect key="frame" x="20" y="75" width="374" height="2.6666666666666714"/>
                                         </progressView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nez-aQ-WPg">
-                                            <rect key="frame" x="72" y="46" width="65" height="14.666666666666664"/>
+                                            <rect key="frame" x="72" y="46" width="65" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="65" id="G5f-4g-2mt"/>
                                             </constraints>
@@ -543,14 +547,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$500.00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="590-kU-WBw">
-                                            <rect key="frame" x="340" y="46" width="65" height="14.666666666666664"/>
+                                            <rect key="frame" x="340" y="46" width="65" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="65" id="m5a-6T-YoY"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Target:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ain-7a-pwb">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ain-7a-pwb">
                                             <rect key="frame" x="294" y="46" width="65" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="65" id="768-ek-Ljf"/>
@@ -567,27 +571,27 @@
                                         <constraint firstItem="nez-aQ-WPg" firstAttribute="firstBaseline" secondItem="ain-7a-pwb" secondAttribute="firstBaseline" id="MMZ-hu-TYb"/>
                                         <constraint firstItem="smU-Ki-5qa" firstAttribute="firstBaseline" secondItem="nez-aQ-WPg" secondAttribute="firstBaseline" id="Ppc-os-MQL"/>
                                         <constraint firstItem="smU-Ki-5qa" firstAttribute="top" secondItem="Kvy-cW-c5o" secondAttribute="bottom" constant="8" symbolic="YES" id="QDZ-3l-swh"/>
+                                        <constraint firstItem="118-0e-c9b" firstAttribute="trailing" secondItem="lZS-yt-fnX" secondAttribute="trailingMargin" id="Rv7-xA-A2Q"/>
+                                        <constraint firstItem="nez-aQ-WPg" firstAttribute="leading" secondItem="lZS-yt-fnX" secondAttribute="leadingMargin" constant="52" id="Thf-nC-361"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="590-kU-WBw" secondAttribute="trailing" constant="-11" id="Uv4-fE-gAn"/>
                                         <constraint firstItem="smU-Ki-5qa" firstAttribute="leading" secondItem="118-0e-c9b" secondAttribute="leading" id="Wir-KN-udF"/>
-                                        <constraint firstItem="Kvy-cW-c5o" firstAttribute="top" secondItem="lZS-yt-fnX" secondAttribute="topMargin" id="Y2p-U4-46i"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ain-7a-pwb" secondAttribute="trailing" constant="35" id="Wmx-c6-Ydt"/>
                                         <constraint firstItem="ain-7a-pwb" firstAttribute="baseline" secondItem="590-kU-WBw" secondAttribute="baseline" id="YYX-6D-fen"/>
-                                        <constraint firstItem="nez-aQ-WPg" firstAttribute="leading" secondItem="lZS-yt-fnX" secondAttribute="leadingMargin" constant="52" id="g3X-Qz-awG"/>
-                                        <constraint firstItem="Kvy-cW-c5o" firstAttribute="trailing" secondItem="lZS-yt-fnX" secondAttribute="trailingMargin" id="idn-hW-30l"/>
-                                        <constraint firstItem="smU-Ki-5qa" firstAttribute="top" secondItem="lZS-yt-fnX" secondAttribute="top" constant="46" id="jUy-LK-G9r"/>
+                                        <constraint firstItem="118-0e-c9b" firstAttribute="leading" secondItem="lZS-yt-fnX" secondAttribute="leadingMargin" id="bbZ-dS-R1W"/>
                                         <constraint firstItem="smU-Ki-5qa" firstAttribute="baseline" secondItem="nez-aQ-WPg" secondAttribute="baseline" id="kr4-cF-j2r"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="ain-7a-pwb" secondAttribute="trailing" constant="22" id="l6g-je-uyc"/>
-                                        <constraint firstItem="Kvy-cW-c5o" firstAttribute="leading" secondItem="lZS-yt-fnX" secondAttribute="leadingMargin" id="lN3-wT-LQS"/>
                                         <constraint firstItem="ain-7a-pwb" firstAttribute="firstBaseline" secondItem="590-kU-WBw" secondAttribute="firstBaseline" id="njd-i0-AS8"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="590-kU-WBw" secondAttribute="trailing" constant="-11" id="rOi-Fu-D3c"/>
+                                        <constraint firstItem="590-kU-WBw" firstAttribute="top" secondItem="lZS-yt-fnX" secondAttribute="top" constant="46" id="tov-SD-6eu"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="goalCurrent" destination="nez-aQ-WPg" id="1Wu-xY-FbY"/>
                                     <outlet property="goalMax" destination="590-kU-WBw" id="pyh-Si-bfi"/>
                                     <outlet property="goalName" destination="Kvy-cW-c5o" id="i41-Hl-EJJ"/>
-                                    <outlet property="goalProgress" destination="lZS-yt-fnX" id="AcG-3f-jMU"/>
+                                    <outlet property="goalProgress" destination="118-0e-c9b" id="5sm-Fu-DmT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="uEa-pA-Sc5" id="NP9-zw-Qog"/>
                             <outlet property="delegate" destination="uEa-pA-Sc5" id="fcf-NA-ago"/>
