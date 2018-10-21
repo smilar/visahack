@@ -3,15 +3,27 @@ package com.chase.money.predict;
 
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class PredictController {
 
-    @RequestMapping("/predict")
-    public Prediction predict(@RequestParam(value="in", defaultValue="10") String in) {
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public Prediction test(@RequestParam(value="in", defaultValue="10") String in) {
         return new Prediction(in);
+    }
+
+    @RequestMapping(
+            value = "/predict",
+            method = RequestMethod.POST,
+            consumes = "text/plain")
+    public Prediction predict(@RequestBody String payload) throws Exception {
+
+
+
+        Prediction pred=new Prediction(payload);
+        return pred;
+
+
     }
 }

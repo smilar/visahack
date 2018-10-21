@@ -6,7 +6,7 @@ import com.workday.insights.timeseries.arima.struct.ForecastResult;
 
 public class ArimaCalc {
 
-    public static String getResults() {
+    public static String getResults(double[] inDataArray) {
 
         {
             // Prepare input timeseries data.
@@ -28,7 +28,7 @@ public class ArimaCalc {
             // Obtain forecast result. The structure contains forecasted values and performance metric etc.
 
             ArimaParams paramsForecast = new ArimaParams(p, d, q, P, D, Q, m);
-            ForecastResult forecastResult = Arima.forecast_arima(dataArray, forecastSize, paramsForecast);
+            ForecastResult forecastResult = Arima.forecast_arima(inDataArray, forecastSize, paramsForecast);
 
             // Read forecast values
             double[] forecastData = forecastResult.getForecast(); // in this example, it will return { 2 }
@@ -53,7 +53,8 @@ public class ArimaCalc {
     }
 
     public static void main (String[]args){
-        System.out.println(ArimaCalc.getResults());
+        double[] dataArray = new double[]{1, 5,9,13,17,21,25,29,33,37,41,45};
+        System.out.println(ArimaCalc.getResults(dataArray));
     }
 
 }
