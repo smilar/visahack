@@ -35,7 +35,7 @@ public class AccountManagementController {
 
     @GetMapping("/payment-account/{id}")
     public List<VirtualPaymentAccount> getAssociatedVirtualAccounts(@PathVariable("id") Long payment_account_id) {
-        return paymentAccountService.getAssoicatedVirtualAccounts(payment_account_id);
+        return paymentAccountService.getVirtualAccounts(payment_account_id);
     }
 
 
