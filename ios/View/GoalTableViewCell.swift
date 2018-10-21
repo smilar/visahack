@@ -10,13 +10,13 @@ import UIKit
 
 class GoalTableViewCell: UITableViewCell {
 
-    @IBOutlet var goalName: UILabel!
-    @IBOutlet var goalCurrent: UILabel!
-    @IBOutlet var goalMax: UILabel!
-    @IBOutlet var goalProgress: UIView!
+    @IBOutlet weak var goalName: UILabel!
+    @IBOutlet weak var goalCurrent: UILabel!
+    @IBOutlet weak var goalMax: UILabel!
+    @IBOutlet weak var goalProgress: UIProgressView!
     
     
-    var goal: Goals! {
+    var goal: Goal! {
         didSet {
             updateUI()
         }
@@ -24,12 +24,12 @@ class GoalTableViewCell: UITableViewCell {
     
     func updateUI()
     {
-//        self.courseImageView.image = course.image
-//        self.title.text = course.title
-//        self.courseDescription.text = course.description
-//        
-//        self.courseImageView?.layer.cornerRadius = 5.0
-//        self.courseImageView?.layer.masksToBounds = true
+    
+        self.goalName.text =  goal.goalTitle
+        self.goalCurrent.text = String(format:"$%.2f", goal.goalCurrent)
+        self.goalMax.text = String(format:"$%.2f", goal.goalTarget)
+        self.goalProgress.setProgress(Float(goal.goalProgress), animated: true)
+        
         
     }
     

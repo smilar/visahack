@@ -10,16 +10,13 @@ import UIKit
 
 class GoalsTableViewController: UITableViewController {
    
-    let goals = [["house","car","college"]]
+    var goals: [Goals] = [Goals.ShortTerm(),Goals.LongTerm()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let goal1 = Goal(goalTitle: "House")
-        let goal2 = Goal(goalTitle: "Car")
+        print(goals)
         
-        
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,6 +26,7 @@ class GoalsTableViewController: UITableViewController {
         // Make the row height dynamic
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
+        
         
         
     }
@@ -41,27 +39,48 @@ class GoalsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return goals[section].goals.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        if (section == 0){
+            return "Short Term Goals"
+        }
+        if (section == 1){
+            return "Long Term Goals"
+        }
+        
+        return "Section \(section)"
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Goal Cell", for: indexPath) as! GoalTableViewCell
+        
+        let goalCollection = goals[indexPath.section]
+        let tempGoals = goalCollection.goals
+        cell.goal = tempGoals[indexPath.row]
+        
+        print(cell.goal)
 
         return cell
     }
-    */
+    
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
+        
+        let goal = goals[indexPath.section]
         return true
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80.0
+    }
+    
 
     /*
     // Override to support editing the table view.
@@ -99,6 +118,7 @@ class GoalsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
 
