@@ -29,6 +29,7 @@
 		6F4BBB65217C2105007B41CD /* GoalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BBB64217C2105007B41CD /* GoalsTableViewController.swift */; };
 		6F4BBB67217C24A8007B41CD /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BBB66217C24A8007B41CD /* Goals.swift */; };
 		6F4BBB69217C2ADD007B41CD /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BBB68217C2ADC007B41CD /* GoalTableViewCell.swift */; };
+		6F4BBB6B217CD3AD007B41CD /* EnvolopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BBB6A217CD3AD007B41CD /* EnvolopeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		6F4BBB64217C2105007B41CD /* GoalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewController.swift; sourceTree = "<group>"; };
 		6F4BBB66217C24A8007B41CD /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		6F4BBB68217C2ADC007B41CD /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+		6F4BBB6A217CD3AD007B41CD /* EnvolopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnvolopeViewController.swift; path = Controller/EnvolopeViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				6F324A711EFB80F500BA347B /* WalkthroughViewController.swift */,
 				6F4BBB64217C2105007B41CD /* GoalsTableViewController.swift */,
 				6F324A721EFB80F500BA347B /* PageViewController.swift */,
+				6F4BBB6A217CD3AD007B41CD /* EnvolopeViewController.swift */,
 				6F324A651EFB80E800BA347B /* CoursesTableViewController.swift */,
 				6F324A661EFB80E800BA347B /* WebViewController.swift */,
 				6F324A671EFB80E800BA347B /* FreeCourseViewController.swift */,
@@ -355,6 +358,7 @@
 				6F3249A81EFB7F4D00BA347B /* AppDelegate.swift in Sources */,
 				6F324A6B1EFB80E800BA347B /* FreeCourseViewController.swift in Sources */,
 				6F4BBB69217C2ADD007B41CD /* GoalTableViewCell.swift in Sources */,
+				6F4BBB6B217CD3AD007B41CD /* EnvolopeViewController.swift in Sources */,
 				6F324A6A1EFB80E800BA347B /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

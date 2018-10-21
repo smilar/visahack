@@ -58,7 +58,7 @@ class Goals {
     
     static func LongTerm() -> Goals
     {
-        let goal1 = Goal(goalTitle: "House", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5)
+        let goal1 = Goal(goalTitle: "House", goalCurrent: 2000.00, goalTarget: 300000.00, goalProgress: 0.5)
         let goals = [goal1]
         
         let longTerm = Goals(title: "Car", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5,goals: goals)

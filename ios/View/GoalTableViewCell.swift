@@ -26,8 +26,8 @@ class GoalTableViewCell: UITableViewCell {
     {
     
         self.goalName.text =  goal.goalTitle
-        self.goalCurrent.text = String(format:"$%.1f", goal.goalCurrent)
-        self.goalMax.text = String(format:"$%.1f", goal.goalTarget)
+        self.goalCurrent.text = String(format:"$%.2f", goal.goalCurrent)
+        self.goalMax.text = String(format:"$%.2f", goal.goalTarget)
         self.goalProgress.setProgress(Float(goal.goalProgress), animated: true)
         
         
