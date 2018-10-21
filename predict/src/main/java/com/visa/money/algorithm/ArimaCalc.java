@@ -1,4 +1,4 @@
-package com.chase.money.algorithm;
+package com.visa.money.algorithm;
 
 import com.workday.insights.timeseries.arima.Arima;
 import com.workday.insights.timeseries.arima.struct.ArimaParams;

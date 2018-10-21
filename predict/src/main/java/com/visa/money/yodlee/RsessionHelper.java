@@ -1,4 +1,4 @@
-package com.chase.money.yodlee;
+package com.visa.money.yodlee;
 
 /*
  *   Copyright 2018 Yodlee, Inc. All Rights Reserved.
@@ -242,11 +242,12 @@ public class RsessionHelper {
         String apiUrl = "https://developer.api.yodlee.com/ysl/";
         String nodeUrl = "https://node.developer.yodlee.com/authenticate/restserver/";
 
+
         String cobrandLoginValue = "";// Put actual cobrand login name
         String cobrandPasswordValue = "";// put actual cobrand passwrod
 
         String userName = ""; // Put actual user name
-        String password = "" ; // Put actual password
+        String password = "" ; // Put actual passwor
 
         String cobrandName="restserver";
         String apiVersion="1.1";

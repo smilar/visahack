@@ -1,4 +1,4 @@
-package com.chase.money.predict;
+package com.visa.money.predict;
 
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;

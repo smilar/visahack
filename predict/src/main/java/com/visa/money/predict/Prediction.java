@@ -1,7 +1,7 @@
-package com.chase.money.predict;
+package com.visa.money.predict;
 
 
-import com.chase.money.algorithm.ArimaCalc;
+import com.visa.money.algorithm.ArimaCalc;
 import lombok.Data;
 
 import java.util.Arrays;

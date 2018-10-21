@@ -1,4 +1,4 @@
-package com.chase.money.predict;
+package com.visa.money.predict;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
