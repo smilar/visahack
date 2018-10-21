@@ -5,6 +5,6 @@ import java.math.BigDecimal;
 import lombok.Data;
 
 @Data
-public class MonthlyEnvelopeRequest{
-    private BigDecimal total;
+public class MonthlyEnvelopeChange{
+    private BigDecimal remaining;
 }

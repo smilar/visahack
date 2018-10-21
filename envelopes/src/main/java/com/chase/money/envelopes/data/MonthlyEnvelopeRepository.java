@@ -3,14 +3,16 @@ package com.chase.money.envelopes.data;
 import java.time.Month;
 import java.util.List;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
+import org.springframework.data.repository.CrudRepository;
 
-public interface MonthlyEnvelopeRepository extends JpaRepository<MonthlyEnvelope, Long> {
+@EnableScan
+public interface MonthlyEnvelopeRepository extends CrudRepository<MonthlyEnvelope, String> {
 
-    List<MonthlyEnvelope> findByParentEnvelopeIdAndYear(long id, long year);
+    List<MonthlyEnvelope> findByParentIdAndYear(String id, long year);
     
-	MonthlyEnvelope findByParentEnvelopeIdAndYearAndMonth(long id, long year,Month month);
-	List<MonthlyEnvelope> findByYearAndMonth(long year,Month month);
+	MonthlyEnvelope findByParentIdAndYearAndMonth(String id, long year,String month);
+	List<MonthlyEnvelope> findByYearAndMonth(long year,String month);
 
 
 }
