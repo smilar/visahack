@@ -36,7 +36,7 @@ public class MonthlyEnvelopeResponse {
     private BigDecimal remaining;
 
     @NotNull
-    private Long vanId;
+    private String vanId;
 
     @NotNull
     @Length(max=4,min=4)

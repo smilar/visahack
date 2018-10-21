@@ -8,9 +8,11 @@ import java.util.stream.Collectors;
 import com.chase.money.envelopes.data.Envelope;
 import com.chase.money.envelopes.data.EnvelopeRepository;
 import com.chase.money.envelopes.data.MonthlyEnvelope;
+import com.chase.money.envelopes.data.MonthlyEnvelopeChange;
 import com.chase.money.envelopes.data.MonthlyEnvelopeRepository;
 import com.chase.money.envelopes.data.MonthlyEnvelopeRequest;
 import com.chase.money.envelopes.data.MonthlyEnvelopeResponse;
+import com.chase.money.envelopes.service.CardService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,6 +35,10 @@ public class EnvelopeController {
     private EnvelopeRepository envelopeRepository;
     @Autowired
     private MonthlyEnvelopeRepository monthlyEnvelopeRepository;
+
+
+    @Autowired
+    private CardService cardService;
 
     @GetMapping("/envelope")
     public Iterable<Envelope> getEnvelopes() {
@@ -60,6 +66,7 @@ public class EnvelopeController {
         return envelopeRepository.save(envelope);
     }
 
+
     @GetMapping("/envelope/{id}/{year}")
     public List<MonthlyEnvelope> getYearlyEnvelopes(@PathVariable("id") String id, @PathVariable("year") long year) {
         log.info("getting year of envelopes " + year);
@@ -77,6 +84,7 @@ public class EnvelopeController {
     @SneakyThrows
     public MonthlyEnvelope createMonthlyEnvelope(@PathVariable("id") String id,
             @RequestBody MonthlyEnvelopeRequest monthlyEnvelope) {
+
        return envelopeRepository.findById(id).map(parent->{
         log.info("adding "+monthlyEnvelope+" to "+parent);
         val now = Calendar.getInstance();
@@ -86,13 +94,25 @@ public class EnvelopeController {
         month.setParentId(id);
         month.setTotal(monthlyEnvelope.getTotal());
         month.setRemaining(monthlyEnvelope.getTotal());
-        month.setVanId(123l);
-        month.setLastFour("4231");
-        month.setExpDate("12/22");
+        val van = cardService.createNewVan(parent.getPanId());
+        month.setVanId(van.getId());
+        month.setLastFour(van.getNumber().substring(11, 15));
+        month.setExpDate(van.getExpMonth()<10?"0":""+van.getExpMonth()+"/"+van.getExpYear());
         return monthlyEnvelopeRepository.save(month);
         }).orElseThrow(() -> {
             throw new EnvelopeNotFound("Envelope with id: "+id + "not Found");
         });
+    }
+
+    @PostMapping("/envelope/{id}/current")
+    @SneakyThrows
+    public MonthlyEnvelope updateMonthlyEnvelope(@PathVariable("id") String id,
+            @RequestBody MonthlyEnvelopeChange monthlyEnvelope) {
+                val now = Calendar.getInstance();
+       val toUpdate = monthlyEnvelopeRepository.findByParentIdAndYearAndMonth(id, Long.valueOf(now.get(Calendar.YEAR)),
+       Month.of(now.get(Calendar.MONTH)+1).toString());
+      toUpdate.setRemaining(monthlyEnvelope.getRemaining());
+      return monthlyEnvelopeRepository.save(toUpdate);
     }
 
     @GetMapping("/envelope/current")
