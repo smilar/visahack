@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F3249A81EFB7F4D00BA347B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3249A71EFB7F4D00BA347B /* AppDelegate.swift */; };
+		6F3249AD1EFB7F4D00BA347B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3249AB1EFB7F4D00BA347B /* Main.storyboard */; };
+		6F3249B21EFB7F4D00BA347B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F3249B01EFB7F4D00BA347B /* LaunchScreen.storyboard */; };
+		6F3249BD1EFB7F4D00BA347B /* MicroMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3249BC1EFB7F4D00BA347B /* MicroMoneyTests.swift */; };
+		6F3249C81EFB7F4D00BA347B /* MicroMoneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3249C71EFB7F4D00BA347B /* MicroMoneyUITests.swift */; };
+		6F324A641EFB80D700BA347B /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A631EFB80D700BA347B /* CourseTableViewCell.swift */; };
+		6F324A691EFB80E800BA347B /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A651EFB80E800BA347B /* CoursesTableViewController.swift */; };
+		6F324A6A1EFB80E800BA347B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A661EFB80E800BA347B /* WebViewController.swift */; };
+		6F324A6B1EFB80E800BA347B /* FreeCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A671EFB80E800BA347B /* FreeCourseViewController.swift */; };
+		6F324A6C1EFB80E800BA347B /* ProgramsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A681EFB80E800BA347B /* ProgramsTableViewController.swift */; };
+		6F324A6F1EFB80EF00BA347B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A6D1EFB80EF00BA347B /* Course.swift */; };
+		6F324A701EFB80EF00BA347B /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A6E1EFB80EF00BA347B /* Program.swift */; };
+		6F324A731EFB80F500BA347B /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A711EFB80F500BA347B /* WalkthroughViewController.swift */; };
+		6F324A741EFB80F500BA347B /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A721EFB80F500BA347B /* PageViewController.swift */; };
+		6F324A761EFB874100BA347B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F324A751EFB874100BA347B /* SettingsViewController.swift */; };
+		6F44163E217BD46700DAC1B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F44163D217BD46700DAC1B9 /* Assets.xcassets */; };
+		6F441642217BDE8C00DAC1B9 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F441640217BDE8B00DAC1B9 /* Montserrat-Regular.otf */; };
+		6F441643217BDE8C00DAC1B9 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6F441641217BDE8B00DAC1B9 /* Montserrat-Light.otf */; };
+		6F4BBB63217BE3BD007B41CD /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BBB62217BE3BD007B41CD /* CardViewController.swift */; };
+		6F4BBB65217C2105007B41CD /* GoalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BBB64217C2105007B41CD /* GoalsTableViewController.swift */; };
+		6F4BBB67217C24A8007B41CD /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BBB66217C24A8007B41CD /* Goals.swift */; };
+		6F4BBB69217C2ADD007B41CD /* GoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4BBB68217C2ADC007B41CD /* GoalTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F3249B91EFB7F4D00BA347B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F32499C1EFB7F4D00BA347B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F3249A31EFB7F4D00BA347B;
+			remoteInfo = RoomBooking;
+		};
+		6F3249C41EFB7F4D00BA347B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F32499C1EFB7F4D00BA347B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F3249A31EFB7F4D00BA347B;
+			remoteInfo = RoomBooking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F3249A41EFB7F4D00BA347B /* MoneyClips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyClips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F3249A71EFB7F4D00BA347B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F3249AC1EFB7F4D00BA347B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F3249B11EFB7F4D00BA347B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F3249B31EFB7F4D00BA347B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3249B81EFB7F4D00BA347B /* MoneyClipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyClipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F3249BC1EFB7F4D00BA347B /* MicroMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroMoneyTests.swift; sourceTree = "<group>"; };
+		6F3249BE1EFB7F4D00BA347B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F3249C31EFB7F4D00BA347B /* MoneyClipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyClipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F3249C71EFB7F4D00BA347B /* MicroMoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroMoneyUITests.swift; sourceTree = "<group>"; };
+		6F3249C91EFB7F4D00BA347B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F324A631EFB80D700BA347B /* CourseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
+		6F324A651EFB80E800BA347B /* CoursesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		6F324A661EFB80E800BA347B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		6F324A671EFB80E800BA347B /* FreeCourseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeCourseViewController.swift; sourceTree = "<group>"; };
+		6F324A681EFB80E800BA347B /* ProgramsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramsTableViewController.swift; sourceTree = "<group>"; };
+		6F324A6D1EFB80EF00BA347B /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		6F324A6E1EFB80EF00BA347B /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		6F324A711EFB80F500BA347B /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		6F324A721EFB80F500BA347B /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		6F324A751EFB874100BA347B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6F44163D217BD46700DAC1B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F441640217BDE8B00DAC1B9 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
+		6F441641217BDE8B00DAC1B9 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
+		6F4BBB62217BE3BD007B41CD /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		6F4BBB64217C2105007B41CD /* GoalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsTableViewController.swift; sourceTree = "<group>"; };
+		6F4BBB66217C24A8007B41CD /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
+		6F4BBB68217C2ADC007B41CD /* GoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F3249A11EFB7F4D00BA347B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F3249B51EFB7F4D00BA347B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F3249C01EFB7F4D00BA347B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F32499B1EFB7F4D00BA347B = {
+			isa = PBXGroup;
+			children = (
+				6F44163C217BD27D00DAC1B9 /* View */,
+				6F44163B217BD27600DAC1B9 /* Controller */,
+				6F44163A217BD26D00DAC1B9 /* Model */,
+				6F3249A61EFB7F4D00BA347B /* RoomBooking */,
+				6F3249BB1EFB7F4D00BA347B /* MicroMoneyTests */,
+				6F3249C61EFB7F4D00BA347B /* MicroMoneyUITests */,
+				6F3249A51EFB7F4D00BA347B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F3249A51EFB7F4D00BA347B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F3249A41EFB7F4D00BA347B /* MoneyClips.app */,
+				6F3249B81EFB7F4D00BA347B /* MoneyClipsTests.xctest */,
+				6F3249C31EFB7F4D00BA347B /* MoneyClipsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F3249A61EFB7F4D00BA347B /* RoomBooking */ = {
+			isa = PBXGroup;
+			children = (
+				6F44163F217BDE5500DAC1B9 /* Fonts */,
+				6F44163D217BD46700DAC1B9 /* Assets.xcassets */,
+				6F3249A71EFB7F4D00BA347B /* AppDelegate.swift */,
+				6F3249AB1EFB7F4D00BA347B /* Main.storyboard */,
+				6F324A751EFB874100BA347B /* SettingsViewController.swift */,
+				6F3249B01EFB7F4D00BA347B /* LaunchScreen.storyboard */,
+				6F3249B31EFB7F4D00BA347B /* Info.plist */,
+			);
+			path = RoomBooking;
+			sourceTree = "<group>";
+		};
+		6F3249BB1EFB7F4D00BA347B /* MicroMoneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F3249BC1EFB7F4D00BA347B /* MicroMoneyTests.swift */,
+				6F3249BE1EFB7F4D00BA347B /* Info.plist */,
+			);
+			path = MicroMoneyTests;
+			sourceTree = "<group>";
+		};
+		6F3249C61EFB7F4D00BA347B /* MicroMoneyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F3249C71EFB7F4D00BA347B /* MicroMoneyUITests.swift */,
+				6F3249C91EFB7F4D00BA347B /* Info.plist */,
+			);
+			path = MicroMoneyUITests;
+			sourceTree = "<group>";
+		};
+		6F44163A217BD26D00DAC1B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6F324A6D1EFB80EF00BA347B /* Course.swift */,
+				6F324A6E1EFB80EF00BA347B /* Program.swift */,
+				6F4BBB66217C24A8007B41CD /* Goals.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6F44163B217BD27600DAC1B9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6F4BBB62217BE3BD007B41CD /* CardViewController.swift */,
+				6F324A711EFB80F500BA347B /* WalkthroughViewController.swift */,
+				6F4BBB64217C2105007B41CD /* GoalsTableViewController.swift */,
+				6F324A721EFB80F500BA347B /* PageViewController.swift */,
+				6F324A651EFB80E800BA347B /* CoursesTableViewController.swift */,
+				6F324A661EFB80E800BA347B /* WebViewController.swift */,
+				6F324A671EFB80E800BA347B /* FreeCourseViewController.swift */,
+				6F324A681EFB80E800BA347B /* ProgramsTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6F44163C217BD27D00DAC1B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F324A631EFB80D700BA347B /* CourseTableViewCell.swift */,
+				6F4BBB68217C2ADC007B41CD /* GoalTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F44163F217BDE5500DAC1B9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6F441641217BDE8B00DAC1B9 /* Montserrat-Light.otf */,
+				6F441640217BDE8B00DAC1B9 /* Montserrat-Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F3249A31EFB7F4D00BA347B /* MoneyClips */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F3249CC1EFB7F4D00BA347B /* Build configuration list for PBXNativeTarget "MoneyClips" */;
+			buildPhases = (
+				6F3249A01EFB7F4D00BA347B /* Sources */,
+				6F3249A11EFB7F4D00BA347B /* Frameworks */,
+				6F3249A21EFB7F4D00BA347B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyClips;
+			productName = RoomBooking;
+			productReference = 6F3249A41EFB7F4D00BA347B /* MoneyClips.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F3249B71EFB7F4D00BA347B /* MoneyClipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F3249CF1EFB7F4D00BA347B /* Build configuration list for PBXNativeTarget "MoneyClipsTests" */;
+			buildPhases = (
+				6F3249B41EFB7F4D00BA347B /* Sources */,
+				6F3249B51EFB7F4D00BA347B /* Frameworks */,
+				6F3249B61EFB7F4D00BA347B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F3249BA1EFB7F4D00BA347B /* PBXTargetDependency */,
+			);
+			name = MoneyClipsTests;
+			productName = RoomBookingTests;
+			productReference = 6F3249B81EFB7F4D00BA347B /* MoneyClipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F3249C21EFB7F4D00BA347B /* MoneyClipsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F3249D21EFB7F4D00BA347B /* Build configuration list for PBXNativeTarget "MoneyClipsUITests" */;
+			buildPhases = (
+				6F3249BF1EFB7F4D00BA347B /* Sources */,
+				6F3249C01EFB7F4D00BA347B /* Frameworks */,
+				6F3249C11EFB7F4D00BA347B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F3249C51EFB7F4D00BA347B /* PBXTargetDependency */,
+			);
+			name = MoneyClipsUITests;
+			productName = RoomBookingUITests;
+			productReference = 6F3249C31EFB7F4D00BA347B /* MoneyClipsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F32499C1EFB7F4D00BA347B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Andrey Danilkovich";
+				TargetAttributes = {
+					6F3249A31EFB7F4D00BA347B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GKA76QVLKF;
+						ProvisioningStyle = Automatic;
+					};
+					6F3249B71EFB7F4D00BA347B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GKA76QVLKF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6F3249A31EFB7F4D00BA347B;
+					};
+					6F3249C21EFB7F4D00BA347B = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GKA76QVLKF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6F3249A31EFB7F4D00BA347B;
+					};
+				};
+			};
+			buildConfigurationList = 6F32499F1EFB7F4D00BA347B /* Build configuration list for PBXProject "MoneyClips" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F32499B1EFB7F4D00BA347B;
+			productRefGroup = 6F3249A51EFB7F4D00BA347B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F3249A31EFB7F4D00BA347B /* MoneyClips */,
+				6F3249B71EFB7F4D00BA347B /* MoneyClipsTests */,
+				6F3249C21EFB7F4D00BA347B /* MoneyClipsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F3249A21EFB7F4D00BA347B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F441643217BDE8C00DAC1B9 /* Montserrat-Light.otf in Resources */,
+				6F3249B21EFB7F4D00BA347B /* LaunchScreen.storyboard in Resources */,
+				6F44163E217BD46700DAC1B9 /* Assets.xcassets in Resources */,
+				6F3249AD1EFB7F4D00BA347B /* Main.storyboard in Resources */,
+				6F441642217BDE8C00DAC1B9 /* Montserrat-Regular.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F3249B61EFB7F4D00BA347B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F3249C11EFB7F4D00BA347B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F3249A01EFB7F4D00BA347B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4BBB67217C24A8007B41CD /* Goals.swift in Sources */,
+				6F324A701EFB80EF00BA347B /* Program.swift in Sources */,
+				6F324A741EFB80F500BA347B /* PageViewController.swift in Sources */,
+				6F324A761EFB874100BA347B /* SettingsViewController.swift in Sources */,
+				6F324A641EFB80D700BA347B /* CourseTableViewCell.swift in Sources */,
+				6F324A6F1EFB80EF00BA347B /* Course.swift in Sources */,
+				6F324A731EFB80F500BA347B /* WalkthroughViewController.swift in Sources */,
+				6F324A691EFB80E800BA347B /* CoursesTableViewController.swift in Sources */,
+				6F4BBB65217C2105007B41CD /* GoalsTableViewController.swift in Sources */,
+				6F324A6C1EFB80E800BA347B /* ProgramsTableViewController.swift in Sources */,
+				6F4BBB63217BE3BD007B41CD /* CardViewController.swift in Sources */,
+				6F3249A81EFB7F4D00BA347B /* AppDelegate.swift in Sources */,
+				6F324A6B1EFB80E800BA347B /* FreeCourseViewController.swift in Sources */,
+				6F4BBB69217C2ADD007B41CD /* GoalTableViewCell.swift in Sources */,
+				6F324A6A1EFB80E800BA347B /* WebViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F3249B41EFB7F4D00BA347B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3249BD1EFB7F4D00BA347B /* MicroMoneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F3249BF1EFB7F4D00BA347B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F3249C81EFB7F4D00BA347B /* MicroMoneyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F3249BA1EFB7F4D00BA347B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F3249A31EFB7F4D00BA347B /* MoneyClips */;
+			targetProxy = 6F3249B91EFB7F4D00BA347B /* PBXContainerItemProxy */;
+		};
+		6F3249C51EFB7F4D00BA347B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F3249A31EFB7F4D00BA347B /* MoneyClips */;
+			targetProxy = 6F3249C41EFB7F4D00BA347B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F3249AB1EFB7F4D00BA347B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F3249AC1EFB7F4D00BA347B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F3249B01EFB7F4D00BA347B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F3249B11EFB7F4D00BA347B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F3249CA1EFB7F4D00BA347B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F3249CB1EFB7F4D00BA347B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F3249CD1EFB7F4D00BA347B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GKA76QVLKF;
+				INFOPLIST_FILE = RoomBooking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.RoomBooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6F3249CE1EFB7F4D00BA347B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GKA76QVLKF;
+				INFOPLIST_FILE = RoomBooking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.RoomBooking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6F3249D01EFB7F4D00BA347B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GKA76QVLKF;
+				INFOPLIST_FILE = RoomBookingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.RoomBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyClips.app/MoneyClips";
+			};
+			name = Debug;
+		};
+		6F3249D11EFB7F4D00BA347B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GKA76QVLKF;
+				INFOPLIST_FILE = RoomBookingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.RoomBookingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyClips.app/MoneyClips";
+			};
+			name = Release;
+		};
+		6F3249D31EFB7F4D00BA347B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GKA76QVLKF;
+				INFOPLIST_FILE = RoomBookingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.RoomBookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RoomBooking;
+			};
+			name = Debug;
+		};
+		6F3249D41EFB7F4D00BA347B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GKA76QVLKF;
+				INFOPLIST_FILE = RoomBookingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = andreydanilkovich.RoomBookingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RoomBooking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F32499F1EFB7F4D00BA347B /* Build configuration list for PBXProject "MoneyClips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3249CA1EFB7F4D00BA347B /* Debug */,
+				6F3249CB1EFB7F4D00BA347B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F3249CC1EFB7F4D00BA347B /* Build configuration list for PBXNativeTarget "MoneyClips" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3249CD1EFB7F4D00BA347B /* Debug */,
+				6F3249CE1EFB7F4D00BA347B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F3249CF1EFB7F4D00BA347B /* Build configuration list for PBXNativeTarget "MoneyClipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3249D01EFB7F4D00BA347B /* Debug */,
+				6F3249D11EFB7F4D00BA347B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F3249D21EFB7F4D00BA347B /* Build configuration list for PBXNativeTarget "MoneyClipsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F3249D31EFB7F4D00BA347B /* Debug */,
+				6F3249D41EFB7F4D00BA347B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F32499C1EFB7F4D00BA347B /* Project object */;
+}
