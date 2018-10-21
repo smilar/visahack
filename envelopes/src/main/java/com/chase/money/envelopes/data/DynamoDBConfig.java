@@ -10,7 +10,6 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClientBuilder;
 
 @Configuration
 @EnableDynamoDBRepositories(basePackages= {"com.chase.money.envelopes.data"})
-@Profile("!local")
 public class DynamoDBConfig {
     
 	

@@ -3,12 +3,6 @@ package com.chase.money.envelopes.data;
 import java.math.BigDecimal;
 import java.time.Month;
 
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -37,7 +31,6 @@ public class MonthlyEnvelope{
     @NotNull
     private Long parentId;
 
-    @Enumerated(EnumType.STRING)
     @NotNull
     private Month month;
 
