@@ -599,7 +599,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Goals" id="Jna-US-O4Y">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="ALv-0n-hm5"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="Free Course" id="2Se-cJ-vZo"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="2Se-cJ-vZo"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJP-il-XQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
