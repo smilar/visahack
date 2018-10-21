@@ -167,11 +167,11 @@
             </objects>
             <point key="canvasLocation" x="-1135" y="311"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Cards-->
         <scene sceneID="XVj-Xg-Wmw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="isM-BX-why" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="visa_card" systemItem="mostViewed" id="7Wq-qu-KnK"/>
+                    <tabBarItem key="tabBarItem" title="Cards" image="Burger" selectedImage="Burger" id="7Wq-qu-KnK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tmu-Pq-hmp">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -429,11 +429,11 @@
             </objects>
             <point key="canvasLocation" x="1708.6956521739132" y="-315.40178571428572"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Goals-->
         <scene sceneID="wTf-05-CMI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QK9-4H-E5H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="Author Filled" systemItem="featured" id="eks-RF-FCG"/>
+                    <tabBarItem key="tabBarItem" title="Goals" image="Courses Filled" selectedImage="Free Course" id="eks-RF-FCG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2eM-1h-exh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -597,7 +597,10 @@
                             <outlet property="delegate" destination="uEa-pA-Sc5" id="fcf-NA-ago"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Goals" id="Jna-US-O4Y"/>
+                    <navigationItem key="navigationItem" title="Goals" id="Jna-US-O4Y">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="ALv-0n-hm5"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="Free Course" id="2Se-cJ-vZo"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJP-il-XQO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -606,7 +609,9 @@
     </scenes>
     <resources>
         <image name="Author" width="50" height="50"/>
-        <image name="Author Filled" width="50" height="50"/>
+        <image name="Burger" width="50" height="50"/>
+        <image name="Courses Filled" width="50" height="50"/>
+        <image name="Free Course" width="50" height="50"/>
         <image name="app1" width="432" height="881"/>
         <image name="visa_card" width="532" height="335"/>
     </resources>

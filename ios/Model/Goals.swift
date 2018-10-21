@@ -45,10 +45,11 @@ class Goals {
     static func ShortTerm() -> Goals
     {
 
-        let goal1 = Goal(goalTitle: "House", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5)
+        let goal1 = Goal(goalTitle: "Vacation", goalCurrent: 50, goalTarget: 700, goalProgress: 0.2)
         
-        let goal2 = Goal(goalTitle: "Car", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5)
-        let goals = [goal1]
+        let goal2 = Goal(goalTitle: "New TV", goalCurrent: 600, goalTarget: 1000, goalProgress: 0.6)
+        let goal3 = Goal(goalTitle: "New Phone", goalCurrent: 600, goalTarget: 750, goalProgress: 0.8)
+        let goals = [goal1, goal2, goal3]
         
         let shortTerm = Goals(title: "Key", goalCurrent: 100.00, goalTarget: 200.00, goalProgress: 0.5,goals: goals)
         
