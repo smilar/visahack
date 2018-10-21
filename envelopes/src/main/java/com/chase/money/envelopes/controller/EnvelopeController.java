@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import lombok.SneakyThrows;
 import lombok.val;
 import lombok.extern.slf4j.Slf4j;
 
@@ -73,7 +74,7 @@ public class EnvelopeController {
     }
 
     @PutMapping("/envelope/{id}")
-    @Transactional
+    @SneakyThrows
     public MonthlyEnvelope createMonthlyEnvelope(@PathVariable("id") long id,
             @RequestBody MonthlyEnvelopeRequest monthlyEnvelope) {
        return envelopeRepository.findById(id).map(parent->{
