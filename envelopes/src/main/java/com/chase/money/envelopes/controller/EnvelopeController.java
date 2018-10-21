@@ -34,7 +34,7 @@ public class EnvelopeController {
     private MonthlyEnvelopeRepository monthlyEnvelopeRepository;
 
     @GetMapping("/envelope")
-    public List<Envelope> getEnvelopes() {
+    public Iterable<Envelope> getEnvelopes() {
         log.info("Getting all envelopes");
         return envelopeRepository.findAll();
     }
