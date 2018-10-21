@@ -7,11 +7,11 @@ import org.socialsignin.spring.data.dynamodb.repository.EnableScan;
 import org.springframework.data.repository.CrudRepository;
 
 @EnableScan
-public interface MonthlyEnvelopeRepository extends CrudRepository<MonthlyEnvelope, Long> {
+public interface MonthlyEnvelopeRepository extends CrudRepository<MonthlyEnvelope, String> {
 
-    List<MonthlyEnvelope> findByParentIdAndYear(long id, long year);
+    List<MonthlyEnvelope> findByParentIdAndYear(String id, long year);
     
-	MonthlyEnvelope findByParentIdAndYearAndMonth(long id, long year,Month month);
+	MonthlyEnvelope findByParentIdAndYearAndMonth(String id, long year,Month month);
 	List<MonthlyEnvelope> findByYearAndMonth(long year,Month month);
 
 

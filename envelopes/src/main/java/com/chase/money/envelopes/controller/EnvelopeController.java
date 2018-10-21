@@ -46,27 +46,27 @@ public class EnvelopeController {
     }
 
     @GetMapping("/envelope/{id}")
-    public Envelope getEnvelope(@PathVariable("id") long id) {
+    public Envelope getEnvelope(@PathVariable("id") String id) {
         log.info("Envelope request for id: " + id);
         return envelopeRepository.findById(id)
                 .orElseThrow(() -> new EnvelopeNotFound("Item: " + id + " Not Found"));
     }
 
     @PostMapping("/envelope/{id}")
-    public Envelope getEnvelope(@PathVariable("id") long id, @RequestBody Envelope envelope) {
+    public Envelope getEnvelope(@PathVariable("id") String id, @RequestBody Envelope envelope) {
         log.info("Updateing Envelope: " + envelope);
         envelope.setId(id);
         return envelopeRepository.save(envelope);
     }
 
     @GetMapping("/envelope/{id}/{year}")
-    public List<MonthlyEnvelope> getYearlyEnvelopes(@PathVariable("id") long id, @PathVariable("year") long year) {
+    public List<MonthlyEnvelope> getYearlyEnvelopes(@PathVariable("id") String id, @PathVariable("year") long year) {
         log.info("getting year of envelopes " + year);
         return monthlyEnvelopeRepository.findByParentIdAndYear(id, year);
     }
 
     @GetMapping("/envelope/{id}/{year}/{month}")
-    public MonthlyEnvelope getMonthlyEnvelope(@PathVariable("id") long id, @PathVariable("year") long year,
+    public MonthlyEnvelope getMonthlyEnvelope(@PathVariable("id") String id, @PathVariable("year") long year,
             @PathVariable("month") String month) {
                 log.info("getting year/month of envelope "+id+" year:" + year+" month:"+month);
         return monthlyEnvelopeRepository.findByParentIdAndYearAndMonth(id, year, Month.valueOf(month));
@@ -74,7 +74,7 @@ public class EnvelopeController {
 
     @PutMapping("/envelope/{id}")
     @SneakyThrows
-    public MonthlyEnvelope createMonthlyEnvelope(@PathVariable("id") long id,
+    public MonthlyEnvelope createMonthlyEnvelope(@PathVariable("id") String id,
             @RequestBody MonthlyEnvelopeRequest monthlyEnvelope) {
        return envelopeRepository.findById(id).map(parent->{
         log.info("adding "+monthlyEnvelope+" to "+parent);
