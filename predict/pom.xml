@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>predict</name>
-	<description>Demo project for Spring Boot</description>
+	<description>service to predict your spending based on history</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -27,13 +27,32 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.16</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.workday</groupId>
+			<artifactId>timeseries-forecast</artifactId>
+			<version>1.1.1</version>
 		</dependency>
 	</dependencies>
 
